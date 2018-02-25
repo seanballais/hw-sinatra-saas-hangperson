@@ -288,9 +288,9 @@ Deploy to Heroku
 Heroku is a cloud platform-as-a-service (PaaS) where we can deploy our Sinatra (and later Rails) applications in a more robust way than via Cloud9. If you don't have an account yet, go sign up at http://www.heroku.com. You'll need your login and password for the next step.
 
 If using Cloud9, update your Heroku Toolbelt installation by typing the following command:
-`wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh`
+`wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh`
 
-Log in to your Heroku account by typing the command: `heroku login` in the Cloud9 terminal. This will connect your Cloud9 workspace to your Heroku account.
+Log in to your Heroku account by typing the command: `heroku login` in the terminal.
 
 While in the root directory of your project (not your whole workspace), type `heroku create` to create a new project in Heroku. This will tell the Heroku service to prepare for some incoming code, and locally on Cloud9, it will add a remote git repository for you called `heroku`.
 
