@@ -69,10 +69,11 @@ class HangpersonGame
 
   def check_win_or_lose
     guessed_letters = self.word_with_guesses
-    if guessed_letters == self.word
-      return :win
-    elsif guessed_letters =~ /^[-]*$/
+    
+    if self.wrong_guesses.length >= 7
       return :lose
+    elsif guessed_letters == self.word
+      return :win
     else guessed_letters =~ /^[#{word}-]*$/
       return :play
     end
